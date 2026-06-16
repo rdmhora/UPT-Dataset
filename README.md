@@ -1,5 +1,5 @@
 # UPT Dataset
-
+![Raw Video](images/raw_image_gif.gif)
 **UAV Person Tracking (UPT)** is a trajectory dataset created for human motion analysis and forecasting from UAV videos. It was designed to capture challenges that are common in real drone imagery, including platform motion, oblique viewing angles, resolution changes, noisy detections, and non-smooth pedestrian trajectories.
 
 > This repository contains the original trajectory files extracted from UAV videos. Each trajectory is stored as a CSV file and represents the center coordinates of one tracked pedestrian over time.
