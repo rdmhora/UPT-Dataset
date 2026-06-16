@@ -20,6 +20,10 @@ The associated study used UPT to evaluate forecasting methods based only on boun
 
 ## Dataset creation pipeline
 
+<p align="center">
+  <img src="https://github.com/rdmhora/UPT-Dataset/blob/main/images/%E2%80%8Epipeline.png" alt="UPT pipeline" width="900">
+</p>
+
 The UPT dataset was constructed through the following pipeline:
 
 1. **Video acquisition**  
@@ -79,25 +83,7 @@ UPT/
 
 The folder CSV contains the trajectories used for train and validates the models. The CSV_test contais the trajectories used for testing.
 
-## Adding images and GIFs
 
-GitHub renders local images directly inside `README.md`. After uploading your assets to the repository, you can display them like this:
-
-```markdown
-## Dataset creation overview
-
-![UPT pipeline](images/pipeline.png)
-
-## Dataset examples
-
-![UPT examples](images/dataset_examples.png)
-
-## Animated preview
-
-![Trajectory animation](images/trajectories.gif)
-```
-
-A practical setup is to export figures from the paper into an `images/` folder and then reference them with relative paths. PNG usually works best for figures, while GIF is useful for showing trajectory evolution over time.
 
 ## Suggested README customization
 
@@ -115,34 +101,3 @@ If this dataset is used in academic work, please cite the associated paper descr
 
 ---
 
-## How to add this README to GitHub
-
-### Option 1: Directly on the GitHub website
-
-1. Open your repository on GitHub.
-2. Click **Add file** -> **Create new file**.
-3. Name the file `README.md`.
-4. Paste the content of this document.
-5. Scroll down, add a commit message such as `Add dataset README`.
-6. Click **Commit new file**.
-
-### Option 2: Using Git locally
-
-```bash
-git clone <your-repository-url>
-cd <your-repository-folder>
-cp UPT_README_24FPS.md README.md
-git add README.md
-git commit -m "Add README for UPT dataset"
-git push origin main
-```
-
-### Option 3: Add images together with the README
-
-```bash
-mkdir -p images
-# copy your exported figures into images/
-git add README.md images/
-git commit -m "Add README and figures"
-git push origin main
-```
