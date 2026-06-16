@@ -19,7 +19,9 @@ The associated study used UPT to evaluate forecasting methods based only on boun
 - Frame width and height values stored together with the coordinates to support later normalization and analysis.
 
 ## Dataset creation pipeline
-![UPT pipeline](images/pipeline.png)
+<p align="center">
+  <img src="images/pipeline.png" alt="UPT pipeline" width="900">
+</p>
 The UPT dataset was constructed through the following pipeline:
 
 1. **Video acquisition**  
