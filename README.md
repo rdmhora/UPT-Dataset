@@ -68,7 +68,8 @@ A simple GitHub structure for this dataset can look like this:
 UPT/
 ├── README.md
 ├── data/
-│   └── 24fps/
+│   ├── CSV/
+│   └── CSV_test/
 ├── images/
 │   ├── pipeline.png
 │   ├── dataset_examples.png
@@ -76,7 +77,7 @@ UPT/
 └── LICENSE
 ```
 
-If you prefer, the CSV files can also stay directly inside `data/`.
+The folder CSV contains the trajectories used for train and validates the models. The CSV_test contais the trajectories used for testing.
 
 ## Adding images and GIFs
 
