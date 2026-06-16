@@ -20,7 +20,7 @@ The associated study used UPT to evaluate forecasting methods based only on boun
 
 ## Dataset creation pipeline
 <p align="center">
-  <img src="images/pipeline.png" alt="UPT pipeline" width="900">
+  <img src="./images/pipeline.png" alt="UPT pipeline" width="900">
 </p>
 The UPT dataset was constructed through the following pipeline:
 
