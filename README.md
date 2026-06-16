@@ -21,7 +21,7 @@ The associated study used UPT to evaluate forecasting methods based only on boun
 ## Dataset creation pipeline
 
 <p align="center">
-  <img src="https://github.com/rdmhora/UPT-Dataset/tree/main/images/pipeline.png" alt="UPT pipeline" width="900">
+  <img src="[https://github.com/rdmhora/UPT-Dataset/tree/main/images/pipeline.png](https://github.com/rdmhora/UPT-Dataset/blob/main/images/%E2%80%8Epipeline.png)" alt="UPT pipeline" width="900">
 </p>
 
 The UPT dataset was constructed through the following pipeline:
