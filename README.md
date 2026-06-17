@@ -95,10 +95,13 @@ Users are free to use, share, and adapt the dataset for academic purposes, provi
 ## Citation
 
 If you use this dataset, please cite:
-@article{hora_human_trajectory_uav,
-  author = {Hora, Rafael D. M. and Santos, Daniel R. and Paulo, Maurício C. M. and Ferrari, Felipe and Feitosa, Raul Q. and Rosa, Paulo F. F.},
-  title = {Human Trajectory Prediction on UAV Images: A Comparative Study}
-  year = {2025}
-}
+
+@inproceedings{hora2026upt,
+  author    = {Hora, Rafael D. M. and Santos, Daniel R. and Paulo, Maurício C. M. and Ferrari, Felipe and Feitosa, Raul Q. and Rosa, Paulo F. F.},
+  title     = {Human Trajectory Prediction on UAV Images: A Comparative Study},
+  booktitle = {Proceedings of the XXV ISPRS Congress},
+  year      = {2026},
+  address   = {Toronto, Canada}
+  }
 ---
 
