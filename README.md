@@ -2,11 +2,23 @@
 ![Raw Video](images/raw_image_gif.gif)
 ![Annotated Video](images/track_gif.gif)
 
-**UAV Person Tracking (UPT)** is a trajectory dataset created for human motion analysis and forecasting from UAV videos. It was designed to capture challenges that are common in real drone imagery, including platform motion, oblique viewing angles, resolution changes, noisy detections, and non-smooth pedestrian trajectories.
+# 🚁 UAV Person Tracking (UPT) Dataset
 
-> This repository contains the original trajectory files extracted from UAV videos. Each trajectory is stored as a CSV file and represents the center coordinates of one tracked pedestrian over time.
+The **UAV Person Tracking (UPT)** dataset is a novel, real-world benchmark designed to address the unique spatial-temporal challenges of human trajectory prediction from Unmanned Aerial Vehicles (UAVs). 
 
-## Overview
+Unlike traditional static-camera datasets, UPT captures the inherent complexities of non-stationary platforms, including oblique viewing angles, platform ego-motion, and scale variations. It provides a robust foundation for training and evaluating both classical machine learning and deep learning architectures (e.g., MLPs, Transformers, RNNs) for real-time trajectory forecasting on resource-constrained edge devices.
+
+## 📊 Dataset Features
+
+* **Rich Real-World Data:** Contains over one hour of raw footage captured at 24 FPS using a drone in diverse, dynamic environments.
+* **Automated & Accurate Extraction:** Pedestrian bounding boxes were automatically detected and tracked using the state-of-the-art **YOLOv12-m** combined with a native Kalman Filter tracker to ensure consistent identity preservation.
+* **Coordinate-Based Focus:** To minimize computational overhead and bypass raw image processing, the dataset provides purely the $(x, y)$ center coordinates of pedestrian bounding boxes.
+* **Temporal Downsampling:** Original 24 FPS trajectories are provided alongside 6, 3, and 2 FPS subsets, allowing researchers to evaluate forecasting models across multiple temporal scales, apparent motion speeds, and prediction horizons.
+* **Standardized Format:** Data is structured in CSV files with built-in frame dimension parameters (width and height) to facilitate linear min-max spatial normalization (e.g., $[-1, 1]$ ranges).
+
+## 🎯 Primary Use Cases
+
+This dataset is specifically tailored for **sequence-to-sequence sliding-window forecasting**. It challenges models to isolate complex, non-smooth human movement trends from centroid tracking noise without relying on full image context, testing the limits of lightweight architectures (such as DLinear, TiDE, and TSMixer) against high-parameter foundation models.
 
 The dataset was created to support research on trajectory prediction in realistic UAV scenarios. Unlike many traditional pedestrian trajectory benchmarks, UPT focuses on situations with a non-stationary camera and oblique views, which are inherent to aerial video capture.
 
