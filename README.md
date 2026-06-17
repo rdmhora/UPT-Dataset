@@ -13,8 +13,6 @@ Unlike traditional static-camera datasets, UPT captures the inherent complexitie
 * **Rich Real-World Data:** Contains over one hour of raw footage captured at 24 FPS using a drone in diverse, dynamic environments.
 * **Automated & Accurate Extraction:** Pedestrian bounding boxes were automatically detected and tracked using the state-of-the-art **YOLOv12-m** combined with a native Kalman Filter tracker to ensure consistent identity preservation.
 * **Coordinate-Based Focus:** To minimize computational overhead and bypass raw image processing, the dataset provides purely the $(x, y)$ center coordinates of pedestrian bounding boxes.
-* **Temporal Downsampling:** Original 24 FPS trajectories are provided alongside 6, 3, and 2 FPS subsets, allowing researchers to evaluate forecasting models across multiple temporal scales, apparent motion speeds, and prediction horizons.
-* **Standardized Format:** Data is structured in CSV files with built-in frame dimension parameters (width and height) to facilitate linear min-max spatial normalization (e.g., $[-1, 1]$ ranges).
 
 ## 🎯 Primary Use Cases
 
