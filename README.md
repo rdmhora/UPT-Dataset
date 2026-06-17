@@ -87,19 +87,18 @@ The folder CSV contains the trajectories used for train and validates the models
 
 
 
-## Suggested README customization
+## Dataset usage
 
-You may want to adapt this README with the following repository-specific details:
-
-- A short note about whether the original UAV videos are public or whether only the extracted trajectories are released.
-- A license section describing how the dataset may be used.
-- A citation section for the associated paper.
-- A short description of the exact CSV columns used in this repository.
-- A sentence describing the capture location or scene diversity, if you want to make the repository page more informative.
+The dataset is publicly available for research use.  
+Users are free to use, share, and adapt the dataset for academic purposes, provided that the associated publication is properly cited.
 
 ## Citation
 
-If this dataset is used in academic work, please cite the associated paper describing the UPT dataset and its benchmark study.
-
+If you use this dataset, please cite:
+@article{hora_human_trajectory_uav,
+  author = {Hora, Rafael D. M. and Santos, Daniel R. and Paulo, Maurício C. M. and Ferrari, Felipe and Feitosa, Raul Q. and Rosa, Paulo F. F.},
+  title = {Human Trajectory Prediction on UAV Images: A Comparative Study}
+  year = {2025}
+}
 ---
 
