@@ -44,18 +44,17 @@ The UPT dataset was constructed through the following pipeline:
 
 Each CSV file represents a single pedestrian trajectory.
 
-A typical file may contain fields such as:
+The first row of the file contains the image dimensions, given as width and height.  
+The second row contains the coordinate headers, `x` and `y`.  
+From the third row onward, each row corresponds to one frame of the trajectory and stores the pedestrian position in image coordinates.  
+The first column represents the horizontal coordinate (`x`), and the second column represents the vertical coordinate (`y`).
 
-| Column | Description |
+| Row | Content |
 |---|---|
-| `width` | Frame width |
-| `height` | Frame height |
-| `t` | Frame index |
-| `x` | Bounding box center x-coordinate |
-| `y` | Bounding box center y-coordinate |
+| 1 | Image dimensions: width and height |
+| 2 | Column headers: `x`, `y` |
+| 3 onward | Pedestrian coordinates for each frame |
 
-
-If your repository uses a different naming convention, update the table above to match the actual CSV schema.
 
 ## Important note
 
