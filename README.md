@@ -48,11 +48,12 @@ A typical file may contain fields such as:
 
 | Column | Description |
 |---|---|
-| `frame` | Frame index |
-| `x` | Bounding box center x-coordinate |
-| `y` | Bounding box center y-coordinate |
 | `width` | Frame width |
 | `height` | Frame height |
+| `t` | Frame index |
+| `x` | Bounding box center x-coordinate |
+| `y` | Bounding box center y-coordinate |
+
 
 If your repository uses a different naming convention, update the table above to match the actual CSV schema.
 
